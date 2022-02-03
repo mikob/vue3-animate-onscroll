@@ -1,0 +1,33 @@
+{
+  "name": "vue3-animate-onscroll",
+  "version": "1.0.6",
+  "description": "A simple Vue directive that animates elements as they scroll into view.",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc -b --force tsconfig.json",
+    "test": "npm run build && jest",
+    "deploy": "npm run test && npm version patch && npm publish",
+    "prepublishOnly": "git push --follow-tags"
+  },
+  "author": "yev",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/lzdjack/vue3-animate-onscroll.git"
+  },
+  "keywords": [
+    "vue3",
+    "scroll",
+    "animate",
+    "reveal"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.2",
+    "typescript": "^4.4.3"
+  }
+}

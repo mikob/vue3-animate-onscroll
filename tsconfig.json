@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "outDir": "./lib",
+    "declaration": true,
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "lib": ["esnext", "dom"],
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["src/*.ts", "src/*.d.ts"],
+  "exclude": ["node_modules", "lib", "**/*.js", "package.json"]
+}
